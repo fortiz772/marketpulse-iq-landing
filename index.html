@@ -17,6 +17,7 @@
       content="AI-powered stock tracking for iPhone and iPad with RSI, momentum, alerts, watchlists, portfolio health, and clearer market insights."
     >
     <meta property="og:image" content="assets/ai-command-center.jpg">
+    <meta property="og:url" content="https://fortiz772.github.io/marketpulse-iq-landing/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="MarketPulse IQ — AI Stock Tracking App Coming Soon">
     <meta
@@ -24,8 +25,25 @@
       content="AI-powered stock tracking for iPhone and iPad with RSI, momentum, alerts, watchlists, portfolio health, and clearer market insights."
     >
     <meta name="twitter:image" content="assets/ai-command-center.jpg">
+    <link rel="canonical" href="https://fortiz772.github.io/marketpulse-iq-landing/">
     <link rel="preload" as="image" href="assets/ai-command-center.jpg">
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "MarketPulse IQ",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "iOS, iPadOS",
+        "description": "AI-powered stock tracking for iPhone and iPad with RSI, momentum, alerts, watchlists, profit/loss tracking, portfolio health, and market insights.",
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/PreOrder",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
   </head>
   <body>
     <header class="site-header" aria-label="Primary">
@@ -37,9 +55,9 @@
         <a href="#demo">Demo</a>
         <a href="#preview">Preview</a>
         <a href="#features">Features</a>
-        <a href="#early-access">Early Access</a>
+        <a href="#early-access">Join</a>
       </nav>
-      <a class="header-cta" href="mailto:fortiz0908@gmail.com?subject=MarketPulse%20IQ%20Early%20Access">Get Early Access</a>
+      <a class="header-cta" href="#early-access">Get Early Access</a>
     </header>
 
     <main id="top">
@@ -52,8 +70,13 @@
           </p>
           <p class="support-line">Built for traders and investors who want clearer market insights without the noise.</p>
           <div class="button-row">
-            <a class="button primary" href="mailto:fortiz0908@gmail.com?subject=MarketPulse%20IQ%20Early%20Access">Get Early Access</a>
+            <a class="button primary" href="#early-access">Get Early Access</a>
             <a class="button secondary" href="#features">See Features</a>
+          </div>
+          <div class="trust-row" aria-label="Launch details">
+            <span>Founder-led beta</span>
+            <span>Free for early users</span>
+            <span>No brokerage connection required</span>
           </div>
           <div class="hero-metrics" aria-label="MarketPulse IQ highlights">
             <div>
@@ -211,12 +234,28 @@
           <div>
             <p class="eyebrow">Coming soon to iPhone and iPad</p>
             <h2>Join the early access list</h2>
-            <p>Free for early users for a limited time. Message me for early access and updates before launch.</p>
+            <p>Free for early users for a limited time. Join the list for launch updates, beta access, and product progress.</p>
           </div>
-          <div class="early-actions">
-            <a class="button primary" href="mailto:fortiz0908@gmail.com?subject=MarketPulse%20IQ%20Early%20Access">Message me for early access</a>
-            <a class="email-link" href="mailto:fortiz0908@gmail.com">fortiz0908@gmail.com</a>
-          </div>
+          <form class="signup-form" action="https://formsubmit.co/fortiz0908@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="MarketPulse IQ early access signup">
+            <input type="hidden" name="_next" value="https://fortiz772.github.io/marketpulse-iq-landing/thank-you.html">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+            <label for="interest">What do you want most?</label>
+            <select id="interest" name="interest">
+              <option>AI stock explanations</option>
+              <option>Momentum and RSI tracking</option>
+              <option>Portfolio health tools</option>
+              <option>Watchlists and alerts</option>
+              <option>Early beta access</option>
+            </select>
+            <button class="button primary" type="submit">Join Early Access</button>
+            <p class="form-note">No spam. Just MarketPulse IQ launch and early access updates.</p>
+          </form>
         </div>
       </section>
 
@@ -238,6 +277,6 @@
       </div>
     </footer>
 
-    <a class="mobile-sticky-cta" href="mailto:fortiz0908@gmail.com?subject=MarketPulse%20IQ%20Early%20Access">Get Early Access</a>
+    <a class="mobile-sticky-cta" href="#early-access">Get Early Access</a>
   </body>
 </html>
