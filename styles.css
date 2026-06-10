@@ -224,6 +224,27 @@ h3 {
   margin-top: 28px;
 }
 
+.trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.trust-row span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid rgba(19, 152, 246, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: #344054;
+  font-size: 13px;
+  font-weight: 800;
+  box-shadow: 0 10px 28px rgba(10, 31, 68, 0.06);
+}
+
 .button {
   padding: 0 22px;
   border: 1px solid transparent;
@@ -610,9 +631,9 @@ h3 {
 }
 
 .early-card {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(320px, 460px);
   align-items: center;
-  justify-content: space-between;
   gap: 28px;
   padding: clamp(28px, 5vw, 54px);
   background:
@@ -638,6 +659,63 @@ h3 {
 .early-actions {
   justify-content: flex-end;
   margin-top: 0;
+}
+
+.signup-form {
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid rgba(229, 237, 247, 0.95);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 18px 48px rgba(10, 31, 68, 0.1);
+}
+
+.signup-form label {
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.signup-form input,
+.signup-form select {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #ffffff;
+  color: var(--ink);
+  font: inherit;
+  box-shadow: inset 0 1px 0 rgba(10, 31, 68, 0.02);
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+  outline: 3px solid rgba(19, 152, 246, 0.18);
+  border-color: var(--blue);
+}
+
+.signup-form .button {
+  width: 100%;
+  margin-top: 6px;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.form-note {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.hidden-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
 }
 
 .disclaimer {
@@ -688,6 +766,44 @@ h3 {
   background: linear-gradient(135deg, var(--blue), var(--green));
   color: white;
   box-shadow: 0 18px 42px rgba(19, 152, 246, 0.35);
+}
+
+.thanks-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(22, 179, 100, 0.12), transparent 32%),
+    linear-gradient(135deg, #f7fbff 0%, #ffffff 48%, #eef8ff 100%);
+}
+
+.thanks-wrap {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 24px;
+}
+
+.thanks-card {
+  max-width: 760px;
+  padding: clamp(28px, 5vw, 56px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: var(--shadow-strong);
+}
+
+.thanks-card .brand {
+  margin-bottom: 32px;
+}
+
+.thanks-card h1 {
+  max-width: 100%;
+  font-size: clamp(44px, 7vw, 72px);
+}
+
+.thanks-card p {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.65;
 }
 
 @media (max-width: 1120px) {
@@ -755,7 +871,7 @@ h3 {
 
   .early-card {
     align-items: flex-start;
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   .early-actions {
@@ -977,6 +1093,11 @@ h3 {
 
   .early-card {
     padding: 24px 18px;
+  }
+
+  .signup-form {
+    width: 100%;
+    padding: 16px;
   }
 
   .email-link {
